@@ -147,7 +147,7 @@ In the event that the Client is an individual, his/her legal heirs, administrato
 
 
 
-“Services” means the services including the description thereof as provided by ISERVEU in connection with the Program and as described in 4.2 hereof, for issuing Prepaid Instruments, funded by the Client for purposes and subject to the limits described in Schedule – IV hereof, to Recipients designated by the Client and approved by the issuer, according to the terms and conditions herein under this Agreement.
+“Services” means the specific services, scope of work, deliverables, controls, and service levels to be provided by ISERVEU as expressly and exhaustively defined under the SCOPE OF SERVICES (Clause 4.2) of this Agreement, and no other services shall be deemed included unless expressly stated therein.
 
 “Set-Up Data” means the information prescribed by the issuer and enabled by ISERVEU Platform   in order to issue a Prepaid Instrument to an individual, which may include personal data including but not limited to name, address, email id, phone number, personal sensitive data, transaction details/data and any such information that may be provided by an individual to the Client or the issuer from time to time and/or KYC documents regarding the individual obtained by the Client, where required by Applicable Law, with the consent of the individual for the purposes of providing to the issuer for the Prepaid Instrument, and in the case of certain Prepaid Instrument types, a card number and card funding value.
 
@@ -164,10 +164,75 @@ In the event that the Client is an individual, his/her legal heirs, administrato
 
 SCOPE OF SERVICES
 
-The Client has the objective of providing Prepaid Instruments to Recipients so that such Recipient can become a Prepaid Member and can use electronic payment solutions and to access various payment facilities available subject to the Terms of Use. 
-Subject to the terms of this Agreement and Applicable Law, to meet the above objective and based on a request from the Client, ISERVEU has agreed to extend its technology integration kit to  use, run the  Pre-Paid Cards with issuer  for use by the Recipients in the Territory subject to them agreeing and complying with the Terms of Use.
+Nature of Services:
+The Client has the objective of providing Prepaid Instruments to Recipients so that such Recipient can become a Prepaid Member and can use electronic payment solutions and access payment facilities subject to the Terms of Use.
 
-ISERVEU shall provide its platform service subsequent to issuer’s sanction to issue the  Pre-paid card to the client. 
+To meet the above objective and subject to the terms of this Agreement and Applicable Law, ISERVEU shall provide a complete, issuer-side, RBI-compliant Semi-Closed Loop Prepaid Card Program, including technology, authorization controls, fund loading, reconciliation, reporting, and operational support, strictly as defined in this Clause 4.2.
+
+No service, feature, or obligation shall be deemed included unless expressly stated in this Agreement.
+
+3.2	Card Program & Issuance
+
+	ISERVEU shall provide:
+Semi-Closed Loop Prepaid Cards (physical and/or virtual)
+Network branded cards (RuPay / Visa / Mastercard)
+BIN-level configuration independent of payment gateways
+Card lifecycle management including issuance, activation, blocking, and closure
+3.3	Authorization & Spend Control (Issuer-Side)
+	ISERVEU shall enforce real-time issuer-side authorization controls, including:
+Default-deny transaction logic
+Whitelisting of approved Merchant IDs (MIDs)
+MCC + MID combination-based authorization
+Real-time approve or decline at authorization stage
+Rule modification without card reissuance
+Payment-gateway-agnostic operation
+Any transaction not explicitly permitted shall be declined.
+3.4	Fund Loading & Escrow Mechanism
+	ISERVEU shall provide:
+Unique Virtual Account (VA) mapped 1:1 to each Prepaid Instrument
+Third-party fund loading through NEFT and IMPS
+Escrow / nodal account–based fund flow
+Credit to Prepaid Instrument balance only after reconciliation
+Prepaid Instrument shall not operate as a bank account
+3.5	Reconciliation & Risk Management
+	ISERVEU shall ensure:
+Automated reconciliation for VA-based credits
+Manual reconciliation workflow for unmatched credits
+Secure holding of unidentified funds in escrow
+Complete audit trail of all credits, reversals, and adjustments
+3.6	Reporting Obligations
+	ISERVEU shall provide:
+Daily transaction reports including MID, MCC, PG identifier, and UTR
+Decline reason codes
+Daily settlement and reconciliation reports
+Regulatory and audit reports as required under Applicable Law
+3.7	Service Levels (SLAs)
+
+Service
+Minimum SLA
+Authorization response time
+≤ 2 seconds
+Platform uptime
+≥ 99.9%
+IMPS credit posting
+Near real-time
+NEFT credit posting
+T+0 / T+1
+MID / rule update
+≤ 1 working day
+Card block / unblock
+Real-time
+
+Failure to meet the above SLAs for three (3) consecutive months shall constitute a material breach of this Agreement.
+
+3.8	Explicit Exclusions
+ISERVEU shall not be responsible for:
+Client-side KYC data collection
+Merchant onboarding beyond MID whitelisting
+Client’s internal accounting or ERP systems
+
+
+
 
 
 ROLES AND RESPONSIBILITIES
@@ -209,6 +274,7 @@ ISERVEU shall provide all technical support associated with usage of the ISERVEU
 ISERVEU shall extend its technology integration kit to the Client for usage subject to the limitation as prescribed in Schedule IV. 
 ISERVEU shall provide its system, subject to the terms and conditions as prescribed by the issuer including but not to AML Guidelines, KYC Due Diligence, PPI Guidelines etc. 
 ISERVEU’s system and this agreement shall be parallel to issuer’s authorization to issue Prepaid Instrument to the Client. ISERVEU’s service shall terminate on issuer’s discontinuance to issue of the Pre-paid Instrument to the Client. 
+Any discretion of ISERVEU or the issuer shall not apply to the services, deliverables, authorization controls, reconciliation obligations, or service levels expressly defined under Clause 4.2.
 
 
 ADDING VALUE TO OR FUNDING PREPAID INSTRUMENTS
@@ -259,7 +325,7 @@ If ISERVEU reasonably believes that changes in, or regulatory or tax interpretat
 The Client fails, after being notified in writing by ISERVEU to meet any of its payment obligations under this Agreement or the relevant Schedules when due and for fifteen (15) days thereafter; The Client fails to meet any of its other obligations under this Agreement or the relevant Schedules and does not remedy such failure within thirty (30) days after being notified in writing by ISERVEU. 
 If the Client makes false or incorrect representations and warranties to enter into this Agreement.
 
-Termination without Cause. Notwithstanding anything contained in this Agreement, ISERVEU may at any time terminate this Agreement without cause upon sixty (60) days’ prior written notice to the Client.
+Termination without Cause. Notwithstanding anything contained in this Agreement, ISERVEU may at any time terminate this Agreement without cause upon sixty (60) days’ prior written notice to the Client. The Client shall also have the right to terminate this Agreement without cause by providing sixty (60) days’ prior written notice to ISERVEU.
 
 
 USE OF CONFIDENTIAL AND PROPRIETARY INFORMATION
@@ -345,6 +411,7 @@ DISCLAIMER OF WARRANTIES
 ISERVEU disclaims all warranties, express or implied, regarding correspondence with description, satisfactory quality, fitness for a particular purpose and non-infringement of any services or any goods provided or incidental to the services provided under this Agreement or in any Marketing Materials.
  
 Subject to the aforesaid ISERVEU disclaims all warranties, express or implied, other than those specifically agreed by it.
+This disclaimer shall not apply to the scope of services, deliverables, authorization controls, reconciliation obligations, or service levels expressly defined under Clause 4.2.
 
 
 FORCE MAJEURE
@@ -387,6 +454,10 @@ This Agreement and the applicable Schedules constitutes the complete understandi
 This Agreement and applicable Schedules shall not be varied without the prior express agreement in writing of each Party. 
 
 Notwithstanding those above, the ISERVEU may, from time to time, amend, modify or otherwise change and notify the Set-Up Data requirements and its related elements, Terms of Use and other prepaid instrument member/cardholder communications in compliance with its internal policies and applicable regulatory guidelines. Further in the event of a Program change applicable to all Recipients similarly situated, ISERVEU may change this Agreement and applicable Schedules at any time upon written notice to Client. If Client does not agree to such changes, it may terminate this Agreement in accordance with the following procedures. The Program Administrator must notify ISERVEU in writing within fifteen [15] days after the effective date of the changes that Client does not agree to the changes and elects to terminate this Agreement.  Otherwise, Client shall be deemed to have agreed to the changes in the notice.
+
+Notwithstanding anything contained herein, ISERVEU shall not amend, modify, or change any provision relating to scope of services, deliverables, authorization controls, reconciliation, or service levels defined under Clause 4.2 without the prior written consent of the Client.
+
+No obligation, service, or deliverable shall be implied from proposals, emails, discussions, presentations, or representations unless expressly incorporated in this Agreement.
 
 Severability; Conflict with Law
 
